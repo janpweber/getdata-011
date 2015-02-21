@@ -39,11 +39,12 @@ Note: when reading the file in, the data frame obtained will have in the first c
 ## CODE BOOK
 
 following variables are contained in the data set:
-* subject: [factor] each subject is identified by an index between 1 and 30
-* activity: [factor] each subject 
+* subject: [factor] each subject is identified by a number between 1 and 30
+* activity: [factor] the original activities were coded 1-6. In this data set they are renamed according to the "activity_labels.txt" distributed with the original data set.
 
-The following variables are the means of the measurements from the original data set per subject and activity. 
-The original data were normalised, hence they do not have units (1). For a more detailed description of the measurements please consult the README and features_info text files contained in the data set.
+The following variables are the means of the measurements from the original data set per subject and activity (for every subject/activity combination the measurements were averaged, e.g. all "WALKING" data of subject 3 etc.)
+
+The original data were normalised, hence they do not have units (1). For a more detailed description of the measurements please consult the "README.txt" and "features_info.txt" files contained in the data set.
 
 * tBodyAcc-mean()-X
 * tBodyAcc-mean()-Y
