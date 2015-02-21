@@ -1,10 +1,10 @@
 # COURSERA getdata-011 Course Project 
 ## Contents
 
-*Introduction
-*R script run_analysis.R
-*Code book
-*References
+* Introduction
+* R script run_analysis.R
+* Code book
+* References
 
 ## Introduction
 This repo contains a run_analysis.R file which was written for the Course Project of the coursera getdata-011 course in February 2015.
@@ -18,7 +18,9 @@ The data needs to be extracted and available in a folder called "dataset" within
 
 ### what does run_analysis.R do?
 
-As by the project description, the R script does the following steps:
+Every essential step in the R script is commented inline. Please look at the script for detailed information.
+
+In short, the R script performs the following steps (as by the project instructions):
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -43,85 +45,85 @@ following variables are contained in the data set:
 The following variables are the means of the measurements from the original data set per subject and activity. 
 The original data were normalised, hence they do not have units (1). For a more detailed description of the measurements please consult the README and features_info text files contained in the data set.
 
-*tBodyAcc-mean()-X
-*tBodyAcc-mean()-Y
-*tBodyAcc-mean()-Z
-*tGravityAcc-mean()-X
-*tGravityAcc-mean()-Y
-*tGravityAcc-mean()-Z
-*tBodyAccJerk-mean()-X
-*tBodyAccJerk-mean()-Y
-*tBodyAccJerk-mean()-Z
-*tBodyGyro-mean()-X
-*tBodyGyro-mean()-Y
-*tBodyGyro-mean()-Z
-*tBodyGyroJerk-mean()-X
-*tBodyGyroJerk-mean()-Y
-*tBodyGyroJerk-mean()-Z
-*tBodyAccMag-mean()
-*tGravityAccMag-mean()
-*tBodyAccJerkMag-mean()
-*tBodyGyroMag-mean()
-*tBodyGyroJerkMag-mean()
-*fBodyAcc-mean()-X
-*fBodyAcc-mean()-Y
-*fBodyAcc-mean()-Z
-*fBodyAcc-meanFreq()-X
-*fBodyAcc-meanFreq()-Y
-*fBodyAcc-meanFreq()-Z
-*fBodyAccJerk-mean()-X
-*fBodyAccJerk-mean()-Y
-*fBodyAccJerk-mean()-Z
-*fBodyAccJerk-meanFreq()-X
-*fBodyAccJerk-meanFreq()-Y
-*fBodyAccJerk-meanFreq()-Z
-*fBodyGyro-mean()-X
-*fBodyGyro-mean()-Y
-*fBodyGyro-mean()-Z
-*fBodyGyro-meanFreq()-X
-*fBodyGyro-meanFreq()-Y
-*fBodyGyro-meanFreq()-Z
-*fBodyAccMag-mean()
-*fBodyAccMag-meanFreq()
-*fBodyBodyAccJerkMag-mean()
-*fBodyBodyAccJerkMag-meanFreq()
-*fBodyBodyGyroMag-mean()
-*fBodyBodyGyroMag-meanFreq()
-*fBodyBodyGyroJerkMag-mean()
-*fBodyBodyGyroJerkMag-meanFreq()
-*tBodyAcc-std()-X
-*tBodyAcc-std()-Y
-*tBodyAcc-std()-Z
-*tGravityAcc-std()-X
-*tGravityAcc-std()-Y
-*tGravityAcc-std()-Z
-*tBodyAccJerk-std()-X
-*tBodyAccJerk-std()-Y
-*tBodyAccJerk-std()-Z
-*tBodyGyro-std()-X
-*tBodyGyro-std()-Y
-*tBodyGyro-std()-Z
-*tBodyGyroJerk-std()-X
-*tBodyGyroJerk-std()-Y
-*tBodyGyroJerk-std()-Z
-*tBodyAccMag-std()
-*tGravityAccMag-std()
-*tBodyAccJerkMag-std()
-*tBodyGyroMag-std()
-*tBodyGyroJerkMag-std()
-*fBodyAcc-std()-X
-*fBodyAcc-std()-Y
-*fBodyAcc-std()-Z
-*fBodyAccJerk-std()-X
-*fBodyAccJerk-std()-Y
-*fBodyAccJerk-std()-Z
-*fBodyGyro-std()-X
-*fBodyGyro-std()-Y
-*fBodyGyro-std()-Z
-*fBodyAccMag-std()
-*fBodyBodyAccJerkMag-std()
-*fBodyBodyGyroMag-std()
-*fBodyBodyGyroJerkMag-std()
+* tBodyAcc-mean()-X
+* tBodyAcc-mean()-Y
+* tBodyAcc-mean()-Z
+* tGravityAcc-mean()-X
+* tGravityAcc-mean()-Y
+* tGravityAcc-mean()-Z
+* tBodyAccJerk-mean()-X
+* tBodyAccJerk-mean()-Y
+* tBodyAccJerk-mean()-Z
+* tBodyGyro-mean()-X
+* tBodyGyro-mean()-Y
+* tBodyGyro-mean()-Z
+* tBodyGyroJerk-mean()-X
+* tBodyGyroJerk-mean()-Y
+* tBodyGyroJerk-mean()-Z
+* tBodyAccMag-mean()
+* tGravityAccMag-mean()
+* tBodyAccJerkMag-mean()
+* tBodyGyroMag-mean()
+* tBodyGyroJerkMag-mean()
+* fBodyAcc-mean()-X
+* fBodyAcc-mean()-Y
+* fBodyAcc-mean()-Z
+* fBodyAcc-meanFreq()-X
+* fBodyAcc-meanFreq()-Y
+* fBodyAcc-meanFreq()-Z
+* fBodyAccJerk-mean()-X
+* fBodyAccJerk-mean()-Y
+* fBodyAccJerk-mean()-Z
+* fBodyAccJerk-meanFreq()-X
+* fBodyAccJerk-meanFreq()-Y
+* fBodyAccJerk-meanFreq()-Z
+* fBodyGyro-mean()-X
+* fBodyGyro-mean()-Y
+* fBodyGyro-mean()-Z
+* fBodyGyro-meanFreq()-X
+* fBodyGyro-meanFreq()-Y
+* fBodyGyro-meanFreq()-Z
+* fBodyAccMag-mean()
+* fBodyAccMag-meanFreq()
+* fBodyBodyAccJerkMag-mean()
+* fBodyBodyAccJerkMag-meanFreq()
+* fBodyBodyGyroMag-mean()
+* fBodyBodyGyroMag-meanFreq()
+* fBodyBodyGyroJerkMag-mean()
+* fBodyBodyGyroJerkMag-meanFreq()
+* tBodyAcc-std()-X
+* tBodyAcc-std()-Y
+* tBodyAcc-std()-Z
+* tGravityAcc-std()-X
+* tGravityAcc-std()-Y
+* tGravityAcc-std()-Z
+* tBodyAccJerk-std()-X
+* tBodyAccJerk-std()-Y
+* tBodyAccJerk-std()-Z
+* tBodyGyro-std()-X
+* tBodyGyro-std()-Y
+* tBodyGyro-std()-Z
+* tBodyGyroJerk-std()-X
+* tBodyGyroJerk-std()-Y
+* tBodyGyroJerk-std()-Z
+* tBodyAccMag-std()
+* tGravityAccMag-std()
+* tBodyAccJerkMag-std()
+* tBodyGyroMag-std()
+* tBodyGyroJerkMag-std()
+* fBodyAcc-std()-X
+* fBodyAcc-std()-Y
+* fBodyAcc-std()-Z
+* fBodyAccJerk-std()-X
+* fBodyAccJerk-std()-Y
+* fBodyAccJerk-std()-Z
+* fBodyGyro-std()-X
+* fBodyGyro-std()-Y
+* fBodyGyro-std()-Z
+* fBodyAccMag-std()
+* fBodyBodyAccJerkMag-std()
+* fBodyBodyGyroMag-std()
+* fBodyBodyGyroJerkMag-std()
 
 ## References
 (1) https://class.coursera.org/getdata-011/forum/thread?thread_id=249
